@@ -194,6 +194,10 @@ h1, h2, h3, h4, h5, h6 {
 #header .logo a {
   color: #fff;
 }
+#header .logo a span{
+  color:#cda45e;
+}
+
 
 #header .logo img {
   max-height: 45px;
@@ -1784,4 +1788,58 @@ section {
   text-align: center;
   font-size: 13px;
   color: #fff;
+}
+
+-------winner part-------------------
+.ruby a{
+  padding-left: 6%;
+}
+.cta {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/about-bg.jpg") fixed center center;
+  background-size: cover;
+  padding: 120px 0;
+}
+
+.cta h3 {
+  color: #cda45e;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.cta p {
+  color: #fff;
+}
+
+.cta .cta-btn {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 30px;
+  border-radius: 2px;
+  transition: 0.5s;
+  margin: 10px;
+  background: #cda45e;
+  color: #fff;
+  border-radius: 50px;
+}
+
+.cta .cta-btn:hover {
+  background: #cda45e;
+
+}
+
+@media (max-width: 1024px) {
+  .cta {
+    background-attachment: scroll;
+  }
+}
+
+@media (min-width: 769px) {
+  .cta .cta-btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
 }
