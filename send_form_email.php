@@ -20,6 +20,7 @@ if(isset($_POST['email'])) {
         !isset($_POST['email']) ||
         !isset($_POST['phone']) ||
         !isset($_POST['Characterid']) ||
+         !isset($_POST['Username']) ||
         !isset($_POST['Tournamentname'])) {
         died('We are sorry, but there appears to be a problem with the form you submitted.');       
     }
@@ -29,7 +30,8 @@ if(isset($_POST['email'])) {
     $name = $_POST['name']; // required
     $email_from = $_POST['email']; // required
     $phone = $_POST['phone']; // required
-    $subject = $_POST['Characterid']; // required
+    $subject = $_POST['Characterid'];//required
+    $subject = $_POST['Username']; // required
     $message = $_POST['Tournamentname']; // required
     
  
@@ -69,6 +71,7 @@ if(isset($_POST['email'])) {
     $email_message .= "Email: ".clean_string($email_from)."\n";
     $email_message .= "Phone: ".clean_string($phone)."\n";
     $email_message .= "Characterid: ".clean_string($Characterid)."\n";
+    $email_message .= "Characterid: ".clean_string($Username)."\n";
     $email_message .= "Tournamentname: ".clean_string($Tournamentname)."\n";
  
 // create email headers
